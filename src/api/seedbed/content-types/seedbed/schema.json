@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seedbeds",
+  "info": {
+    "singularName": "seedbed",
+    "pluralName": "seedbeds",
+    "displayName": "Грядки",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "fields": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::field.field",
+      "mappedBy": "seedbeds"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "width": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "plants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::plant.plant",
+      "inversedBy": "seedbeds"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

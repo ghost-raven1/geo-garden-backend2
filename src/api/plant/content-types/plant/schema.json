@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plants",
+  "info": {
+    "singularName": "plant",
+    "pluralName": "plants",
+    "displayName": "Растения",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "seedbeds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::seedbed.seedbed",
+      "mappedBy": "plants"
+    },
+    "new": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "string"
+    },
+    "hotbeds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::hotbed.hotbed",
+      "mappedBy": "plants"
+    },
+    "winter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::winter.winter",
+      "inversedBy": "plants"
+    },
+    "cancellations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cancellation.cancellation",
+      "mappedBy": "plant"
+    }
+  }
+}

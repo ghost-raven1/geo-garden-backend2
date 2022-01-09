@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "winters",
+  "info": {
+    "singularName": "winter",
+    "pluralName": "winters",
+    "displayName": "Зимовка растений",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "plants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plant.plant",
+      "mappedBy": "winter"
+    }
+  }
+}
