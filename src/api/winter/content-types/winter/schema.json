@@ -15,14 +15,14 @@
     "date": {
       "type": "date"
     },
-    "description": {
-      "type": "richtext"
-    },
     "plants": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::plant.plant",
       "mappedBy": "winter"
+    },
+    "notes": {
+      "type": "richtext"
     }
   }
 }

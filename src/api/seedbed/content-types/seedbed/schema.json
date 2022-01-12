@@ -15,9 +15,6 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "fields": {
       "type": "relation",
       "relation": "manyToMany",
@@ -49,6 +46,9 @@
     },
     "type": {
       "type": "string"
+    },
+    "notes": {
+      "type": "richtext"
     }
   }
 }

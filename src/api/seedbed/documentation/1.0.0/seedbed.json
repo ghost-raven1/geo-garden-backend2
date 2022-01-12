@@ -22,9 +22,6 @@
                               "name": {
                                 "type": "string"
                               },
-                              "description": {
-                                "type": "string"
-                              },
                               "fields": {
                                 "type": "object",
                                 "properties": {
@@ -71,9 +68,6 @@
                                                         "type": "object",
                                                         "properties": {
                                                           "name": {
-                                                            "type": "string"
-                                                          },
-                                                          "description": {
                                                             "type": "string"
                                                           },
                                                           "fields": {
@@ -948,6 +942,19 @@
                                                                                           }
                                                                                         }
                                                                                       },
+                                                                                      "landing": {
+                                                                                        "type": "string",
+                                                                                        "format": "date-time"
+                                                                                      },
+                                                                                      "amount": {
+                                                                                        "type": "integer"
+                                                                                      },
+                                                                                      "alive": {
+                                                                                        "type": "integer"
+                                                                                      },
+                                                                                      "notes": {
+                                                                                        "type": "string"
+                                                                                      },
                                                                                       "createdAt": {
                                                                                         "type": "string",
                                                                                         "format": "date-time"
@@ -1268,9 +1275,6 @@
                                                                                       "type": "string",
                                                                                       "format": "date"
                                                                                     },
-                                                                                    "description": {
-                                                                                      "type": "string"
-                                                                                    },
                                                                                     "plants": {
                                                                                       "type": "object",
                                                                                       "properties": {
@@ -1290,6 +1294,9 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    },
+                                                                                    "notes": {
+                                                                                      "type": "string"
                                                                                     },
                                                                                     "createdAt": {
                                                                                       "type": "string",
@@ -1807,6 +1814,16 @@
                                                                             }
                                                                           }
                                                                         },
+                                                                        "root": {
+                                                                          "type": "string"
+                                                                        },
+                                                                        "landing": {
+                                                                          "type": "string",
+                                                                          "format": "date-time"
+                                                                        },
+                                                                        "notes": {
+                                                                          "type": "string"
+                                                                        },
                                                                         "createdAt": {
                                                                           "type": "string",
                                                                           "format": "date-time"
@@ -1861,6 +1878,9 @@
                                                             }
                                                           },
                                                           "type": {
+                                                            "type": "string"
+                                                          },
+                                                          "notes": {
                                                             "type": "string"
                                                           },
                                                           "createdAt": {
@@ -2288,6 +2308,9 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "notes": {
+                                              "type": "string"
                                             },
                                             "createdAt": {
                                               "type": "string",
@@ -2769,6 +2792,9 @@
                               "type": {
                                 "type": "string"
                               },
+                              "notes": {
+                                "type": "string"
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -3100,9 +3126,6 @@
                             "name": {
                               "type": "string"
                             },
-                            "description": {
-                              "type": "string"
-                            },
                             "fields": {
                               "type": "object",
                               "properties": {
@@ -3149,9 +3172,6 @@
                                                       "type": "object",
                                                       "properties": {
                                                         "name": {
-                                                          "type": "string"
-                                                        },
-                                                        "description": {
                                                           "type": "string"
                                                         },
                                                         "fields": {
@@ -4026,6 +4046,19 @@
                                                                                         }
                                                                                       }
                                                                                     },
+                                                                                    "landing": {
+                                                                                      "type": "string",
+                                                                                      "format": "date-time"
+                                                                                    },
+                                                                                    "amount": {
+                                                                                      "type": "integer"
+                                                                                    },
+                                                                                    "alive": {
+                                                                                      "type": "integer"
+                                                                                    },
+                                                                                    "notes": {
+                                                                                      "type": "string"
+                                                                                    },
                                                                                     "createdAt": {
                                                                                       "type": "string",
                                                                                       "format": "date-time"
@@ -4346,9 +4379,6 @@
                                                                                     "type": "string",
                                                                                     "format": "date"
                                                                                   },
-                                                                                  "description": {
-                                                                                    "type": "string"
-                                                                                  },
                                                                                   "plants": {
                                                                                     "type": "object",
                                                                                     "properties": {
@@ -4368,6 +4398,9 @@
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  },
+                                                                                  "notes": {
+                                                                                    "type": "string"
                                                                                   },
                                                                                   "createdAt": {
                                                                                     "type": "string",
@@ -4885,6 +4918,16 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "root": {
+                                                                        "type": "string"
+                                                                      },
+                                                                      "landing": {
+                                                                        "type": "string",
+                                                                        "format": "date-time"
+                                                                      },
+                                                                      "notes": {
+                                                                        "type": "string"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -4939,6 +4982,9 @@
                                                           }
                                                         },
                                                         "type": {
+                                                          "type": "string"
+                                                        },
+                                                        "notes": {
                                                           "type": "string"
                                                         },
                                                         "createdAt": {
@@ -5366,6 +5412,9 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "notes": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -5845,6 +5894,9 @@
                               }
                             },
                             "type": {
+                              "type": "string"
+                            },
+                            "notes": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -6067,9 +6119,6 @@
                       "name": {
                         "type": "string"
                       },
-                      "description": {
-                        "type": "string"
-                      },
                       "fields": {
                         "type": "array",
                         "items": {
@@ -6121,6 +6170,9 @@
                         }
                       },
                       "type": {
+                        "type": "string"
+                      },
+                      "notes": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -6186,9 +6238,6 @@
                             "name": {
                               "type": "string"
                             },
-                            "description": {
-                              "type": "string"
-                            },
                             "fields": {
                               "type": "object",
                               "properties": {
@@ -6235,9 +6284,6 @@
                                                       "type": "object",
                                                       "properties": {
                                                         "name": {
-                                                          "type": "string"
-                                                        },
-                                                        "description": {
                                                           "type": "string"
                                                         },
                                                         "fields": {
@@ -7112,6 +7158,19 @@
                                                                                         }
                                                                                       }
                                                                                     },
+                                                                                    "landing": {
+                                                                                      "type": "string",
+                                                                                      "format": "date-time"
+                                                                                    },
+                                                                                    "amount": {
+                                                                                      "type": "integer"
+                                                                                    },
+                                                                                    "alive": {
+                                                                                      "type": "integer"
+                                                                                    },
+                                                                                    "notes": {
+                                                                                      "type": "string"
+                                                                                    },
                                                                                     "createdAt": {
                                                                                       "type": "string",
                                                                                       "format": "date-time"
@@ -7432,9 +7491,6 @@
                                                                                     "type": "string",
                                                                                     "format": "date"
                                                                                   },
-                                                                                  "description": {
-                                                                                    "type": "string"
-                                                                                  },
                                                                                   "plants": {
                                                                                     "type": "object",
                                                                                     "properties": {
@@ -7454,6 +7510,9 @@
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  },
+                                                                                  "notes": {
+                                                                                    "type": "string"
                                                                                   },
                                                                                   "createdAt": {
                                                                                     "type": "string",
@@ -7971,6 +8030,16 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "root": {
+                                                                        "type": "string"
+                                                                      },
+                                                                      "landing": {
+                                                                        "type": "string",
+                                                                        "format": "date-time"
+                                                                      },
+                                                                      "notes": {
+                                                                        "type": "string"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -8025,6 +8094,9 @@
                                                           }
                                                         },
                                                         "type": {
+                                                          "type": "string"
+                                                        },
+                                                        "notes": {
                                                           "type": "string"
                                                         },
                                                         "createdAt": {
@@ -8452,6 +8524,9 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "notes": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -8931,6 +9006,9 @@
                               }
                             },
                             "type": {
+                              "type": "string"
+                            },
+                            "notes": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -9173,9 +9251,6 @@
                             "name": {
                               "type": "string"
                             },
-                            "description": {
-                              "type": "string"
-                            },
                             "fields": {
                               "type": "object",
                               "properties": {
@@ -9222,9 +9297,6 @@
                                                       "type": "object",
                                                       "properties": {
                                                         "name": {
-                                                          "type": "string"
-                                                        },
-                                                        "description": {
                                                           "type": "string"
                                                         },
                                                         "fields": {
@@ -10099,6 +10171,19 @@
                                                                                         }
                                                                                       }
                                                                                     },
+                                                                                    "landing": {
+                                                                                      "type": "string",
+                                                                                      "format": "date-time"
+                                                                                    },
+                                                                                    "amount": {
+                                                                                      "type": "integer"
+                                                                                    },
+                                                                                    "alive": {
+                                                                                      "type": "integer"
+                                                                                    },
+                                                                                    "notes": {
+                                                                                      "type": "string"
+                                                                                    },
                                                                                     "createdAt": {
                                                                                       "type": "string",
                                                                                       "format": "date-time"
@@ -10419,9 +10504,6 @@
                                                                                     "type": "string",
                                                                                     "format": "date"
                                                                                   },
-                                                                                  "description": {
-                                                                                    "type": "string"
-                                                                                  },
                                                                                   "plants": {
                                                                                     "type": "object",
                                                                                     "properties": {
@@ -10441,6 +10523,9 @@
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  },
+                                                                                  "notes": {
+                                                                                    "type": "string"
                                                                                   },
                                                                                   "createdAt": {
                                                                                     "type": "string",
@@ -10958,6 +11043,16 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "root": {
+                                                                        "type": "string"
+                                                                      },
+                                                                      "landing": {
+                                                                        "type": "string",
+                                                                        "format": "date-time"
+                                                                      },
+                                                                      "notes": {
+                                                                        "type": "string"
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -11012,6 +11107,9 @@
                                                           }
                                                         },
                                                         "type": {
+                                                          "type": "string"
+                                                        },
+                                                        "notes": {
                                                           "type": "string"
                                                         },
                                                         "createdAt": {
@@ -11439,6 +11537,9 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "notes": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -11920,6 +12021,9 @@
                             "type": {
                               "type": "string"
                             },
+                            "notes": {
+                              "type": "string"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -12151,9 +12255,6 @@
                       "name": {
                         "type": "string"
                       },
-                      "description": {
-                        "type": "string"
-                      },
                       "fields": {
                         "type": "array",
                         "items": {
@@ -12205,6 +12306,9 @@
                         }
                       },
                       "type": {
+                        "type": "string"
+                      },
+                      "notes": {
                         "type": "string"
                       },
                       "createdAt": {

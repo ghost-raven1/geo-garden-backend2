@@ -15,9 +15,6 @@
     "type": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -31,6 +28,9 @@
     },
     "name": {
       "type": "string"
+    },
+    "notes": {
+      "type": "richtext"
     }
   }
 }

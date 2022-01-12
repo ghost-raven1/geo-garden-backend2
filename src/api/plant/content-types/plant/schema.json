@@ -61,6 +61,15 @@
       "relation": "oneToMany",
       "target": "api::cancellation.cancellation",
       "mappedBy": "plant"
+    },
+    "root": {
+      "type": "string"
+    },
+    "landing": {
+      "type": "datetime"
+    },
+    "notes": {
+      "type": "richtext"
     }
   }
 }

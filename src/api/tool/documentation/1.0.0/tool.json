@@ -22,9 +22,6 @@
                               "type": {
                                 "type": "string"
                               },
-                              "description": {
-                                "type": "string"
-                              },
                               "image": {
                                 "type": "object",
                                 "properties": {
@@ -399,6 +396,9 @@
                                 "type": "integer"
                               },
                               "name": {
+                                "type": "string"
+                              },
+                              "notes": {
                                 "type": "string"
                               },
                               "createdAt": {
@@ -983,9 +983,6 @@
                             "type": {
                               "type": "string"
                             },
-                            "description": {
-                              "type": "string"
-                            },
                             "image": {
                               "type": "object",
                               "properties": {
@@ -1360,6 +1357,9 @@
                               "type": "integer"
                             },
                             "name": {
+                              "type": "string"
+                            },
+                            "notes": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -1833,9 +1833,6 @@
                       "type": {
                         "type": "string"
                       },
-                      "description": {
-                        "type": "string"
-                      },
                       "image": {
                         "oneOf": [
                           {
@@ -1851,6 +1848,9 @@
                         "type": "integer"
                       },
                       "name": {
+                        "type": "string"
+                      },
+                      "notes": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -1914,9 +1914,6 @@
                           "type": "object",
                           "properties": {
                             "type": {
-                              "type": "string"
-                            },
-                            "description": {
                               "type": "string"
                             },
                             "image": {
@@ -2293,6 +2290,9 @@
                               "type": "integer"
                             },
                             "name": {
+                              "type": "string"
+                            },
+                            "notes": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -2786,9 +2786,6 @@
                             "type": {
                               "type": "string"
                             },
-                            "description": {
-                              "type": "string"
-                            },
                             "image": {
                               "type": "object",
                               "properties": {
@@ -3163,6 +3160,9 @@
                               "type": "integer"
                             },
                             "name": {
+                              "type": "string"
+                            },
+                            "notes": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -3647,9 +3647,6 @@
                       "type": {
                         "type": "string"
                       },
-                      "description": {
-                        "type": "string"
-                      },
                       "image": {
                         "oneOf": [
                           {
@@ -3665,6 +3662,9 @@
                         "type": "integer"
                       },
                       "name": {
+                        "type": "string"
+                      },
+                      "notes": {
                         "type": "string"
                       },
                       "createdAt": {
